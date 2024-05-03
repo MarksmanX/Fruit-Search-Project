@@ -44,13 +44,6 @@ function showSuggestions(results, inputBox) {
         suggestions.appendChild(suggestion);
     });
 
-	
-
-	//Position dropdown to be right below the text input
-	const inputRect = inputBox.getBoundingClientRect();
-	suggestions.style.left = inputRect.left + 'px';
-	suggestions.style.top = inputRect.bottom + 'px';
-
 	// Add the has-suggestions class to the search container
     searchContainer.classList.add('has-suggestions');
 	searchContainer.classList.remove('no-suggestions');
